@@ -14,5 +14,11 @@ model User {
   id       Int    @id @default(autoincrement())
   username String @unique
   password String
-  // Outros campos do usuário, se necessário
+}
+
+model Conversation {
+  id        Int      @id @default(autoincrement())
+  text      String
+  sender    String 
+  timestamp DateTime
 }
