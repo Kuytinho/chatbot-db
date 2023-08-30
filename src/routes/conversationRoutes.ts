@@ -3,10 +3,8 @@ import { listConversations, createConversation } from '../controllers/conversati
 
 const conversationRouter = express.Router();
 
-// Rota para listar todas as conversas
 conversationRouter.get('/conversations', listConversations);
 
-// Rota para criar uma nova conversa
 conversationRouter.post('/conversations', createConversation);
 
 export default conversationRouter;
